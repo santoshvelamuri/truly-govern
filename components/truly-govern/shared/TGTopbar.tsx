@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { Search, Bell } from "lucide-react";
+import { Search, Bell, LogOut } from "lucide-react";
 import { supabase } from "@/lib/supabaseClient";
 import NotificationPanel from "@/components/truly-govern/shared/NotificationPanel";
 
@@ -86,6 +86,13 @@ export default function TGTopbar() {
     router.push(`/truly-govern${url}`);
   }
 
+  async function handleLogout() {
+    await supabase.auth.signOut();
+    router.push("/");
+  }
+
+  const showLogout = process.env.NEXT_PUBLIC_TG_EMBEDDED !== "true";
+
   return (
     <header className="relative flex h-12 shrink-0 items-center justify-between border-b border-neutral-200 bg-white px-6">
       <nav className="flex items-center gap-1 text-sm text-neutral-500">
@@ -112,6 +119,17 @@ export default function TGTopbar() {
         <button className="rounded-md p-1.5 text-neutral-400 hover:bg-neutral-100 hover:text-neutral-600">
           <Search size={16} />
         </button>
+
+        {showLogout && (
+          <button
+            onClick={handleLogout}
+            title="Sign out"
+            aria-label="Sign out"
+            className="rounded-md p-1.5 text-neutral-400 hover:bg-neutral-100 hover:text-neutral-600"
+          >
+            <LogOut size={16} />
+          </button>
+        )}
 
         {/* Bell with badge */}
         <div className="relative" ref={panelRef}>

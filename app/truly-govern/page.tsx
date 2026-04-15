@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
 
 export default function TrulyGovernRoot() {
-  redirect("/govern/advisor");
+  redirect("/truly-govern/govern/advisor");
 }

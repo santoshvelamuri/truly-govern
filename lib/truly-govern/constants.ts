@@ -100,22 +100,22 @@ export const DEVIATION_SOURCE_LABELS = {
 
 export const TG_NAV_ITEMS = [
   { section: "Govern", items: [
-    { label: "Advisor", href: "/govern/advisor", icon: "MessageSquare" },
-    { label: "Policy library", href: "/govern/policies", icon: "Shield" },
-    { label: "Pattern library", href: "/govern/patterns", icon: "Layers" },
-    { label: "Deviations", href: "/govern/deviations", icon: "AlertTriangle" },
+    { label: "Advisor", href: "/truly-govern/govern/advisor", icon: "MessageSquare" },
+    { label: "Policy library", href: "/truly-govern/govern/policies", icon: "Shield" },
+    { label: "Pattern library", href: "/truly-govern/govern/patterns", icon: "Layers" },
+    { label: "Deviations", href: "/truly-govern/govern/deviations", icon: "AlertTriangle" },
   ]},
   { section: "Review", items: [
-    { label: "Design reviews", href: "/govern/reviews", icon: "ClipboardCheck" },
+    { label: "Design reviews", href: "/truly-govern/govern/reviews", icon: "ClipboardCheck" },
   ]},
   { section: "Decide", items: [
-    { label: "Decision requests", href: "/govern/decisions", icon: "GitBranch" },
-    { label: "ARB backlog", href: "/govern/arb", icon: "Calendar" },
+    { label: "Decision requests", href: "/truly-govern/govern/decisions", icon: "GitBranch" },
+    { label: "ARB backlog", href: "/truly-govern/govern/arb", icon: "Calendar" },
   ]},
   { section: "Record", items: [
-    { label: "ADR library", href: "/govern/adrs", icon: "FileText" },
+    { label: "ADR library", href: "/truly-govern/govern/adrs", icon: "FileText" },
   ]},
   { section: "Settings", items: [
-    { label: "Organisation", href: "/govern/settings", icon: "Settings" },
+    { label: "Organisation", href: "/truly-govern/govern/settings", icon: "Settings" },
   ]},
 ] as const;
