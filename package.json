@@ -35,7 +35,7 @@
     "dom-to-image-more": "^3.7.2",
     "html2canvas": "^1.4.1",
     "jspdf": "^4.2.0",
-    "lucide-react": "^0.577.0",
+    "lucide-react": "^1.8.0",
     "next": "^16.2.3",
     "openai": "^6.32.0",
     "radix-ui": "^1.4.3",
