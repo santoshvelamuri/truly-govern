@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
 /* Auth screens SaaS style */
 .auth-container {
   min-height: 100vh !important;
@@ -80,8 +83,6 @@
   cursor: pointer !important;
   text-decoration: underline !important;
 }
-@import "tailwindcss";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
